@@ -33,8 +33,8 @@ public class ReplaceSpaces {
             }
         }
     }
-	
-	public static void main(String[] args) {
+    
+    public static void main(String[] args) {
         char[] mrJohnSmith = {'M', 'r', ' ', 'J', 'o', 'h', 'n', ' ', 'S', 'm', 'i', 't', 'h', ' ', ' ', ' ',' '};
         replaceSpaces(mrJohnSmith, 13);
         System.out.println(String.valueOf(mrJohnSmith)); // Prints Mr%20John%20Smith
