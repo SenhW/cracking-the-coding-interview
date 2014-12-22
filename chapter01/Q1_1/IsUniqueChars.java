@@ -35,8 +35,8 @@ public class IsUniqueChars {
         }
         return true;
     }
-	
-	public static void main(String[] args) {
+    
+    public static void main(String[] args) {
         System.out.println(isUniqueChars("hello")); // return false
         System.out.println(isUniqueChars("world")); // return true
         System.out.println(isUniqueChars2("hello")); // return false
