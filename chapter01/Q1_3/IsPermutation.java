@@ -6,18 +6,18 @@ import java.util.Arrays;
 
 public class IsPermutation {
 
-    public static void main(String[] args) {
-        System.out.println(isPermutation("a", "b")); // false
-        System.out.println(isPermutation("cheaters", "teachers")); // true
-        System.out.println(isPermutation("abc", "abcs")); // false
-        System.out.println(isPermutation("ab", "ba")); // true
-    }
-
     public static boolean isPermutation(String str1, String str2) {
         char[] a = str1.toCharArray();
         char[] b = str2.toCharArray();
         Arrays.sort(a);
         Arrays.sort(b);
         return Arrays.equals(a, b);
+    }
+	
+	public static void main(String[] args) {
+        System.out.println(isPermutation("a", "b")); // false
+        System.out.println(isPermutation("cheaters", "teachers")); // true
+        System.out.println(isPermutation("abc", "abcs")); // false
+        System.out.println(isPermutation("ab", "ba")); // true
     }
 }

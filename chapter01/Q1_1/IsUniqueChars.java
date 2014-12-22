@@ -8,13 +8,6 @@ import java.util.Set;
 
 public class IsUniqueChars {
 
-    public static void main(String[] args) {
-        System.out.println(isUniqueChars("hello")); // return false
-        System.out.println(isUniqueChars("world")); // return true
-        System.out.println(isUniqueChars2("hello")); // return false
-        System.out.println(isUniqueChars2("world")); // return true
-    }
-
     public static boolean isUniqueChars(String string) {
         if (string == null) return false;
         Set<Character> set = new HashSet<Character>();
@@ -41,5 +34,12 @@ public class IsUniqueChars {
             }
         }
         return true;
+    }
+	
+	public static void main(String[] args) {
+        System.out.println(isUniqueChars("hello")); // return false
+        System.out.println(isUniqueChars("world")); // return true
+        System.out.println(isUniqueChars2("hello")); // return false
+        System.out.println(isUniqueChars2("world")); // return true
     }
 }

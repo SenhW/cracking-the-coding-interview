@@ -11,15 +11,6 @@
 
 public class ReplaceSpaces {
 
-    public static void main(String[] args) {
-        char[] mrJohnSmith = {'M', 'r', ' ', 'J', 'o', 'h', 'n', ' ', 'S', 'm', 'i', 't', 'h', ' ', ' ', ' ',' '};
-        replaceSpaces(mrJohnSmith, 13);
-        System.out.println(String.valueOf(mrJohnSmith)); // Prints Mr%20John%20Smith
-        char[] abcdef = {'a', 'b', 'c', ' ', 'd', ' ', 'e', ' ', 'f', ' ', ' ', ' ', ' ', ' ', ' '};
-        replaceSpaces(abcdef, 9);
-        System.out.println(String.valueOf(abcdef)); // Prints abc%20d%20e%20f
-    }
-
     public static void replaceSpaces(char[] str, int length) {
         // First pass: Count number of spaces
         int numSpaces = 0;
@@ -41,5 +32,14 @@ public class ReplaceSpaces {
                 resultLength--;
             }
         }
+    }
+	
+	public static void main(String[] args) {
+        char[] mrJohnSmith = {'M', 'r', ' ', 'J', 'o', 'h', 'n', ' ', 'S', 'm', 'i', 't', 'h', ' ', ' ', ' ',' '};
+        replaceSpaces(mrJohnSmith, 13);
+        System.out.println(String.valueOf(mrJohnSmith)); // Prints Mr%20John%20Smith
+        char[] abcdef = {'a', 'b', 'c', ' ', 'd', ' ', 'e', ' ', 'f', ' ', ' ', ' ', ' ', ' ', ' '};
+        replaceSpaces(abcdef, 9);
+        System.out.println(String.valueOf(abcdef)); // Prints abc%20d%20e%20f
     }
 }
