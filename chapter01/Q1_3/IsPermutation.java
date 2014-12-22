@@ -13,8 +13,8 @@ public class IsPermutation {
         Arrays.sort(b);
         return Arrays.equals(a, b);
     }
-	
-	public static void main(String[] args) {
+    
+    public static void main(String[] args) {
         System.out.println(isPermutation("a", "b")); // false
         System.out.println(isPermutation("cheaters", "teachers")); // true
         System.out.println(isPermutation("abc", "abcs")); // false
